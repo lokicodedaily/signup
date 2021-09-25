@@ -1,10 +1,165 @@
 body {
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
+    width: 100%;
 }
 
-div{
-    height : 100vh;
-    width : 100vw;
-    background: dodgerblue;
+.header {
+    background: #013243;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    color:#fff;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.caption {
+    color: #86bfd3;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.header__image {
+    max-width: 70%;
+}
+
+/* LOGIN FORM */
+
+.login {
+    background-color: #fff;
+    
+}
+
+.login__form {
+    display: block;
+    margin: 1rem 0 1rem 2rem;
+}
+
+.login__heading{
+    font-size: 2.5rem;
+}
+
+.label__text{
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 1.5em;
+    margin-bottom: .5rem;
+}
+
+.input {
+    width: 70%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccccce;
+    font-size: 1.5rem;
+}
+
+.agree__form {
+    margin-top: 1rem;
+}
+
+.tick {
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+}
+
+.agree {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+}
+
+.span__text{
+    color:#013243;
+    text-decoration: underline;
+}
+
+.btn {
+
+    font-size: 1.5rem;
+    margin: 1.3rem auto 0;
+    background-color: #013243;
+    color: #fff;
+    width: 80%;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-radius: 5px;
+    outline: 0;
+    cursor: pointer;
+}
+
+.btn__main{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body{
+        background: url(../images/Background\(3\).webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__image{
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    body{
+        margin: 0;
+        align-items: center;
+    }
+    .container{
+        flex-direction: row;
+    }
+
+    .header {
+        width: 45%;
+    }
+
+    .caption{
+        font-size: 1.2rem;
+    }
+
+    .login{
+        width: 50%;
+    }
+
+    .input {
+        font-size: 1rem;
+    }
+
+    .agree {
+        font-size: 1rem;
+    }
+
+    .btn{
+        font-size: 1.2rem;
+    }
 }

@@ -15,14 +15,42 @@
     <title>Sign In</title>
   </head>
   <body>
-    <article class="container">
-        <picture>
-            
-        </picture>
+    <div class="container">
+        <article class="header">
+            <section class="header__text">
+                <h1 class="heading">Gradie</h1>
+                <p class="caption">Beautiful gradients in seconds</p>
+            </section>
+            <img class="header__image"src="./images/iPhoneMockup(1).webp" alt="">
+        </article>
+        <article class="login">
+            <article class="login__form"> 
+                <section>
+                    <h1 class="login__heading">Login</h1>
+                </section>
+    
+                <section>
+                    <label class="label__text"for="email">Email</label>
+                    <input class="input"type="email" name="email" placeholder="John@gmail.com">
+                </section>
+    
+                <section>
+                    <label class="label__text"for="password">Password</label>
+                    <input class="input" type="password" name="password" placeholder="At least 8 characters" minLength="8">
+                </section>
+    
+                <section class="agree__form">
+                    <input class="tick" type="checkbox" name="checkbox">
+                    <label class="agree" for="checkbox">By creating an account, you agree to <span class="span__text">Terms & Conditions</span>.</label>
+                </section>
+            </article>
 
-        <section>
-
-        </section>
-    </article>
+            <section class="btn__main">
+                <button class="btn">
+                    Create an account
+                </button>
+            </section>
+        </article>
+    </div>
   </body>
 </html>
